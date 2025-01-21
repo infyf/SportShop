@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AuthForm from "../Auth/AuthForm";
+import styles from './navbar.module.css'; {/* Зміна - підключений стиль navbar.module.css */}
 
 const Navbar = () => {
   const [isAuthFormVisible, setAuthFormVisible] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className={styles.navbar}> {/* Зміна - доданий класс стиля в navbar */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <h1>SportSpider</h1>
         <ul style={{ display: "flex", listStyle: "none", padding: 0, margin: 0 }}>
