@@ -124,7 +124,7 @@ const AuthForm = ({ closeForm }) => {
             </div>
           </div>
         )}
-        {error && <div className={styles['auth-error']}><p>{error}</p></div>} {/* Зміна - використано новий стиль для помилок */}
+        {error && <div className={styles['auth-error']}><p>{error}</p></div>}
       </div>
     </div>
   );
