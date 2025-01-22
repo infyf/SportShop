@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AuthForm from "../Auth/AuthForm";
-import styles from './navbar.module.css'; {/* Зміна - підключений стиль navbar.module.css */}
+import styles from './navbar.module.css'; // Підключений стиль
 
 const Navbar = () => {
   const [isAuthFormVisible, setAuthFormVisible] = useState(false);
@@ -10,8 +10,7 @@ const Navbar = () => {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "Каталог товарів", path: "/shop" },
-    { label: "Розміщення товарів", path: "/aaa" },
-    
+    { label: "Розміщення товарів", path: "/add-products" },
   ];
 
   const handleAuthFormToggle = () => {
@@ -23,25 +22,43 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.navbar}> {/* Зміна - доданий класс стиля в navbar */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+    <div className={styles.navbar}>
+      {/* Логотип */}
+      <div className={styles.logo}>
         <h1>SportSpider</h1>
-        <ul style={{ display: "flex", listStyle: "none", padding: 0, margin: 0 }}>
-          {navItems.map((item, index) => (
-            <li key={index} style={{ margin: "0 10px" }}>
-              <Link to={item.path}>{item.label}</Link>
-            </li>
-          ))}
-        </ul>
-        <div>
-          {isAuthenticated ? (
-            <button onClick={handleLogout}>Вийти</button>
-          ) : (
-            <button onClick={handleAuthFormToggle}>Вхід/Реєстрація</button>
-          )}
-        </div>
       </div>
-      {isAuthFormVisible && <AuthForm closeForm={handleAuthFormToggle} setIsAuthenticated={setIsAuthenticated} />}
+      
+      {/* Навігація */}
+      <ul className={styles.navList}>
+        {navItems.map((item, index) => (
+          <li key={index} className={styles.navItem}>
+            <Link to={item.path} className={styles.navLink}>
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      
+      {/* Кнопки авторизації */}
+      <div>
+        {isAuthenticated ? (
+          <button className={styles.authButton} onClick={handleLogout}>
+            Вийти
+          </button>
+        ) : (
+          <button className={styles.authButton} onClick={handleAuthFormToggle}>
+            Вхід/Реєстрація
+          </button>
+        )}
+      </div>
+
+      {/* Форма авторизації */}
+      {isAuthFormVisible && (
+        <AuthForm
+          closeForm={handleAuthFormToggle}
+          setIsAuthenticated={setIsAuthenticated}
+        />
+      )}
     </div>
   );
 };
