@@ -55,11 +55,10 @@ const AuthForm = ({ closeForm }) => {
 
   return (
     <div className={styles['auth-form-container']}> {/* Зміна - доданий новий контейнер для модального вікна */}
-     <div className={styles['auth-modal']}> {/* Зміна - клас для стилів модального вікна */}
-      <div>
-        <button onClick={closeForm}>Закрити</button>
-      </div>
-      <div>
+      <div className={styles['auth-modal']}> {/* Зміна - клас для стилів модального вікна */}
+        <div>
+          <button onClick={closeForm}>Закрити</button>
+        </div>
         {!isRegistering ? (
           <div>
             <h2>Вхід</h2>
