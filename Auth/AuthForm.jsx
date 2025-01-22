@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from './authForm.module.css'; {/* Зміна - підключений стиль authForm.module.css */}
+import styles from './authForm.module.css';
 
 const AuthForm = ({ closeForm }) => {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -54,8 +54,8 @@ const AuthForm = ({ closeForm }) => {
   };
 
   return (
-    <div className={styles['auth-form-container']}> {/* Зміна - доданий новий контейнер для модального вікна */}
-      <div className={styles['auth-modal']}> {/* Зміна - клас для стилів модального вікна */}
+    <div className={styles['auth-form-container']}> 
+      <div className={styles['auth-modal']}> 
         <div>
           <button onClick={closeForm}>Закрити</button>
         </div>
