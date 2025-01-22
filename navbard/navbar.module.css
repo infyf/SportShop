@@ -1,69 +1,89 @@
-/* Загальні стилі для навігації */
+
 .navbar {
-  background: linear-gradient(135deg, #0de2ed, #2a58ff); 
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); 
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Логотип */
-.navbar .logo {
-  font-size: 24px;
-  font-weight: bold;
+.logo h1 {
   color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-/* Стилі для списку посилань */
-.navbar ul {
-  list-style-type: none;
+/* Список навігації */
+.navList {
   display: flex;
   gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Стилі для посилань */
-.navbar ul li a {
+
+.navItem {
+  margin: 0;
+}
+
+/* Посилання */
+.navLink {
   text-decoration: none;
   color: white;
   font-size: 16px;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.navbar ul li a:hover {
-  color: #f0f0f0; 
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
 }
 
-/* Стили для кнопки "Вхід/Реєстрація" */
-.auth-button {
-  background-color: #4CAF50; 
+/* Кнопки авторизації */
+.authButton {
+  background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Ефект під час наведення */
-.auth-button:hover {
-  background-color: #45a049; 
+.authButton:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
 }
 
-/* Адаптивні стилі для мобільних пристроїв */
+/* Адаптивність */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .navbar ul {
+  .navList {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 15px;
   }
 
-  .navbar ul li {
-    text-align: left;
+  .authButton {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
   }
 }
