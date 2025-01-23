@@ -31,7 +31,7 @@ const TextContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 1.5rem 2rem;
   border-radius: 10px;
-  max-width: 70%; /* Обмежена ширина тексту */
+  max-width: 70%;
 `;
 
 const Title = styled.h1`
@@ -39,7 +39,7 @@ const Title = styled.h1`
   font-weight: bold;
   color: white; 
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Тінь для тексту */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 `;
 
 const Subtitle = styled.p`
@@ -47,7 +47,7 @@ const Subtitle = styled.p`
   font-style: italic;
   color: white;
   margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Тінь для підзаголовка */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 `;
 
 const StyledButton = styled(Link)`
