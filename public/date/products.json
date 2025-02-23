@@ -1,0 +1,38 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Футбольний м'яч Nike Strike",
+        "price": 999,
+        "description": "Професійний футбольний м'яч для тренувань та матчів. Виготовлений з високоякісних матеріалів для кращого контролю та довговічності. Особливості:\n\n- Текстурована поверхня для кращого контролю\n- Міцний матеріал для тривалого використання\n- Ідеально збалансований для точних ударів\n- Офіційний розмір та вага",
+        "image": "https://sportano.ua/img/b52b588476b8def9e5d485faf958f16f/1/9/194500856981_21-jpg/futbol-nij-m-jach-nike-strike-team-cu8064-100-rozmir-5-576330.jpg",
+        "category": "football-balls",
+        "inStock": 10,
+        "specifications": {
+          "size": "5",
+          "material": "Синтетична шкіра",
+          "weight": "410-450 г",
+          "type": "Матчевий"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Бігові кросівки Adidas Ultraboost",
+        "price": 4999,
+        "description": "Інноваційні бігові кросівки з технологією Boost для максимального комфорту та енергоповернення під час бігу.",
+        "image": "https://content.rozetka.com.ua/goods/images/big/423898051.jpg",
+        "category": "running-shoes",
+        "inStock": 5,
+        "specifications": {
+          "size": "40-45",
+          "material": "Текстиль, синтетика",
+          "weight": "300 г",
+          "type": "Бігові"
+        }
+      }
+      
+      
+    ]
+  }
+  
+  
