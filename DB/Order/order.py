@@ -1,5 +1,6 @@
 import sqlite3
-import pandas as pand 
+import pandas as pand  
+import pytest
 # Data about things  
 conn = sqlite3.connect('C:\\Users\\user\\Desktop\\DB-Server-sport\\Order.db')
 query = "SELECT  ID, Name, Order, Date, Address  from sport" 
@@ -9,13 +10,17 @@ def select():
     return query
 
 def delete(): 
-    query = "DELETE * from order" 
+    query = "DELETE  from order" 
     return query
+def test_delete(): 
+    assert delete()
 def update(): 
-    query = "UPDATE * from order" 
+    query = "UPDATE  from order" 
     return query
 def read(): 
-    query = "UPDATE * from order" 
+    query = "UPDATE  from order" 
     return query 
-conn.close()
+conn.close() 
+if conn == true :
+    pytest.delete()
 print(data)
