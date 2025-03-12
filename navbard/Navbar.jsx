@@ -1,16 +1,21 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";  
-import { Search, Headphones, Heart, User, ShoppingCart, Menu } from "lucide-react";
-import AuthForm from "../Auth/AuthForm";  
+import { Link, useNavigate } from "react-router-dom";
+import { Search, Headphones, Heart, User, ShoppingCart, Menu } from 'lucide-react';
+import AuthForm from "../Auth/AuthForm";
+import { useWishlist } from "../context/WishlistContext";
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isAuthFormVisible, setAuthFormVisible] = useState(false);  
   const [isAuthenticated, setIsAuthenticated] = useState(false);  
+  const navigate = useNavigate();
+  const { wishlist } = useWishlist();
 
   const handleSearch = (e) => {
     e.preventDefault();
-   
+    if (searchQuery.trim()) {
+      navigate(`/catalog?search=${encodeURIComponent(searchQuery)}`);
+    }
   };
 
   const handleAuthFormToggle = () => {
@@ -31,9 +36,24 @@ const Navbar = () => {
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-white hover:text-gray-200">Home</Link>
-              <Link to="/catalog" className="text-white hover:text-gray-200">Каталог товарів</Link>
-              <Link to="/add-products" className="text-white hover:text-gray-200">Розміщення товарів</Link>
+              <Link 
+                to="/" 
+                className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
+              >
+                Home
+              </Link>
+              <Link 
+                to="/catalog" 
+                className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
+              >
+                Каталог товарів
+              </Link>
+              <Link 
+                to="/add-products" 
+                className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
+              >
+                Розміщення товарів
+              </Link>
             </div>
 
             {isAuthenticated ? (
@@ -71,7 +91,6 @@ const Navbar = () => {
               Каталог товарів
             </Link>
 
-            {/* Форма для пошуку, але без функціонала */}
             <form onSubmit={handleSearch} className="flex-1 relative">
               <input
                 type="text"
@@ -94,9 +113,14 @@ const Navbar = () => {
                 <span className="hidden md:inline">Зворотній зв'язок</span>
               </button>
 
-              <button className="hover:text-gray-300">
+              <Link to="/wishlist" className="relative hover:text-gray-300">
                 <Heart size={20} />
-              </button>
+                {wishlist.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                    {wishlist.length}
+                  </span>
+                )}
+              </Link>
 
               <button className="hover:text-gray-300">
                 <User size={20} />
