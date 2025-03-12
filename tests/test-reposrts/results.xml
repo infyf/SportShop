@@ -1,0 +1,25 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<testsuites>
+<testsuite name="TestDatabaseOperations-20250311151401" tests="4" file=".py" time="0.032" timestamp="2025-03-11T15:14:01" failures="0" errors="4" skipped="0">
+<testcase classname="TestDatabaseOperations" name="test_delete" time="0.008" timestamp="2025-03-11T15:14:01" file="Order.test.py" line="25">
+<error type="OperationalError" message="no such table: sport">
+<![CDATA[ Traceback (most recent call last): File "C:\Users\user\Downloads\q\test\Order.test.py", line 27, in test_delete self.cursor.execute(query) ~~~~~~~~~~~~~~~~~~~^^^^^^^ sqlite3.OperationalError: no such table: sport ]]>
+</error>
+</testcase>
+<testcase classname="TestDatabaseOperations" name="test_read" time="0.021" timestamp="2025-03-11T15:14:01" file="Order.test.py" line="41">
+<error type="DatabaseError" message="Execution failed on sql 'SELECT * FROM sport': no such table: sport">
+<![CDATA[ Traceback (most recent call last): File "C:\Users\user\Downloads\q\test\venv\Lib\site-packages\pandas\io\sql.py", line 2674, in execute cur.execute(sql, *args) ~~~~~~~~~~~^^^^^^^^^^^^ sqlite3.OperationalError: no such table: sport The above exception was the direct cause of the following exception: Traceback (most recent call last): File "C:\Users\user\Downloads\q\test\Order.test.py", line 43, in test_read df = pd.read_sql_query(query, self.conn) File "C:\Users\user\Downloads\q\test\venv\Lib\site-packages\pandas\io\sql.py", line 526, in read_sql_query return pandas_sql.read_query( ~~~~~~~~~~~~~~~~~~~~~^ sql, ^^^^ ...<6 lines>... dtype_backend=dtype_backend, ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\Users\user\Downloads\q\test\venv\Lib\site-packages\pandas\io\sql.py", line 2738, in read_query cursor = self.execute(sql, params) File "C:\Users\user\Downloads\q\test\venv\Lib\site-packages\pandas\io\sql.py", line 2686, in execute raise ex from exc pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM sport': no such table: sport ]]>
+</error>
+</testcase>
+<testcase classname="TestDatabaseOperations" name="test_select" time="0.001" timestamp="2025-03-11T15:14:01" file="Order.test.py" line="19">
+<error type="OperationalError" message="no such table: sport">
+<![CDATA[ Traceback (most recent call last): File "C:\Users\user\Downloads\q\test\Order.test.py", line 21, in test_select self.cursor.execute(query) ~~~~~~~~~~~~~~~~~~~^^^^^^^ sqlite3.OperationalError: no such table: sport ]]>
+</error>
+</testcase>
+<testcase classname="TestDatabaseOperations" name="test_update" time="0.002" timestamp="2025-03-11T15:14:01" file="Order.test.py" line="33">
+<error type="OperationalError" message="no such table: sport">
+<![CDATA[ Traceback (most recent call last): File "C:\Users\user\Downloads\q\test\Order.test.py", line 35, in test_update self.cursor.execute(query) ~~~~~~~~~~~~~~~~~~~^^^^^^^ sqlite3.OperationalError: no such table: sport ]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>
