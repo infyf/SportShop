@@ -1,4 +1,4 @@
-"use client"
+
 import { Link } from "react-router-dom"
 import { ShoppingCart, ArrowLeft, Trash, Plus, Minus } from "lucide-react"
 import { useCart } from "../components/context/CartContext"
