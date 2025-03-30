@@ -1,30 +1,33 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Search, Headphones, Heart, User, ShoppingCart, Menu } from 'lucide-react';
-import AuthForm from "../Auth/AuthForm";
-import { useWishlist } from "../context/WishlistContext";
+
+import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { Search, Headphones, Heart, User, ShoppingCart, Menu } from "lucide-react"
+import AuthForm from "../Auth/AuthForm"
+import { useWishlist } from "../context/WishlistContext"
+import { useCart } from "../context/CartContext"
 
 const Navbar = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isAuthFormVisible, setAuthFormVisible] = useState(false);  
-  const [isAuthenticated, setIsAuthenticated] = useState(false);  
-  const navigate = useNavigate();
-  const { wishlist } = useWishlist();
+  const [searchQuery, setSearchQuery] = useState("")
+  const [isAuthFormVisible, setAuthFormVisible] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const navigate = useNavigate()
+  const { wishlist } = useWishlist()
+  const { getCartItemsCount } = useCart()
 
   const handleSearch = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (searchQuery.trim()) {
-      navigate(`/catalog?search=${encodeURIComponent(searchQuery)}`);
+      navigate(`/catalog?search=${encodeURIComponent(searchQuery)}`)
     }
-  };
+  }
 
   const handleAuthFormToggle = () => {
-    setAuthFormVisible(!isAuthFormVisible);  
-  };
+    setAuthFormVisible(!isAuthFormVisible)
+  }
 
   const handleLogout = () => {
-    setIsAuthenticated(false);  
-  };
+    setIsAuthenticated(false)
+  }
 
   return (
     <header>
@@ -36,20 +39,17 @@ const Navbar = () => {
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link 
-                to="/" 
-                className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
-              >
+              <Link to="/" className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20">
                 Home
               </Link>
-              <Link 
-                to="/catalog" 
+              <Link
+                to="/catalog"
                 className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
               >
                 Каталог товарів
               </Link>
-              <Link 
-                to="/add-products" 
+              <Link
+                to="/add-products"
                 className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
               >
                 Розміщення товарів
@@ -61,17 +61,14 @@ const Navbar = () => {
                 <Link to="/profile" className="text-white hover:text-gray-200">
                   <User size={24} />
                 </Link>
-                <button
-                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
-                  onClick={handleLogout}  
-                >
+                <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded" onClick={handleLogout}>
                   Вийти
                 </button>
               </>
             ) : (
               <button
                 className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
-                onClick={handleAuthFormToggle}  
+                onClick={handleAuthFormToggle}
               >
                 Вхід/Реєстрація
               </button>
@@ -126,25 +123,23 @@ const Navbar = () => {
                 <User size={20} />
               </button>
 
-              <button className="relative hover:text-gray-300">
+              <Link to="/cart" className="relative hover:text-gray-300">
                 <ShoppingCart size={20} />
-                <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
-                  0
-                </span>
-              </button>
+                {getCartItemsCount() > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                    {getCartItemsCount()}
+                  </span>
+                )}
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      {isAuthFormVisible && (
-        <AuthForm
-          closeForm={handleAuthFormToggle}  
-          setIsAuthenticated={setIsAuthenticated} 
-        />
-      )}
+      {isAuthFormVisible && <AuthForm closeForm={handleAuthFormToggle} setIsAuthenticated={setIsAuthenticated} />}
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
+
