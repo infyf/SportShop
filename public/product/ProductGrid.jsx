@@ -1,13 +1,15 @@
 
 import React from "react"
-import { Heart } from "lucide-react"
+import { Heart, ShoppingCart } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import { useWishlist } from "../../components/context/WishlistContext"
+import { useCart } from "../../components/context/CartContext"
 
 const ProductGrid = ({ categoryId, searchQuery }) => {
   const navigate = useNavigate()
   const [products, setProducts] = React.useState([])
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist()
+  const { addToCart } = useCart()
 
   React.useEffect(() => {
     fetch("/data/products.json")
@@ -39,6 +41,20 @@ const ProductGrid = ({ categoryId, searchQuery }) => {
         image: product.image,
       })
     }
+  }
+
+  const handleAddToCart = (e, product) => {
+    e.stopPropagation()
+
+    addToCart(
+      {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image,
+      },
+      1,
+    )
   }
 
   return (
@@ -78,13 +94,10 @@ const ProductGrid = ({ categoryId, searchQuery }) => {
                 <p className="mt-2 text-xl font-bold">{product.price} ₴</p>
               </div>
               <button
-                className="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  // cart
-                }}
+                className="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors flex items-center justify-center"
+                onClick={(e) => handleAddToCart(e, product)}
               >
-                В кошик
+                <ShoppingCart size={18} className="mr-2" />В кошик
               </button>
             </div>
           )
