@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import { Star, ShoppingCart, Plus, Minus, Heart, ArrowLeft } from "lucide-react"
 import { useWishlist } from "../components/context/WishlistContext"
+import { useCart } from "../components/context/CartContext"
 
 const ProductPage = () => {
   const { productId } = useParams()
@@ -17,6 +17,7 @@ const ProductPage = () => {
   })
 
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist()
+  const { addToCart } = useCart()
   const productInWishlist = product ? isInWishlist(Number(productId)) : false
 
   useEffect(() => {
@@ -44,7 +45,18 @@ const ProductPage = () => {
   }
 
   const handleAddToCart = () => {
-    console.log(`Adding ${quantity} of ${product.name} to cart`)
+    if (product) {
+      addToCart(
+        {
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          image: product.image,
+        },
+        quantity,
+      )
+      // Прибрано алерт
+    }
   }
 
   const handleToggleWishlist = () => {
