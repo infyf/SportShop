@@ -1,18 +1,18 @@
-
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { Search, Headphones, Heart, User, ShoppingCart, Menu } from "lucide-react"
+import { Search, Headphones, Heart, User, ShoppingCart, Menu, LogOut } from "lucide-react"
 import AuthForm from "../Auth/AuthForm"
 import { useWishlist } from "../context/WishlistContext"
 import { useCart } from "../context/CartContext"
+import { useAuth } from "../context/AuthContext"
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("")
   const [isAuthFormVisible, setAuthFormVisible] = useState(false)
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
   const navigate = useNavigate()
   const { wishlist } = useWishlist()
   const { getCartItemsCount } = useCart()
+  const { currentUser, logout, isAuthenticated } = useAuth()
 
   const handleSearch = (e) => {
     e.preventDefault()
@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   const handleLogout = () => {
-    setIsAuthenticated(false)
+    logout()
   }
 
   return (
@@ -57,14 +57,27 @@ const Navbar = () => {
             </div>
 
             {isAuthenticated ? (
-              <>
-                <Link to="/profile" className="text-white hover:text-gray-200">
-                  <User size={24} />
+              <div className="flex items-center gap-4">
+                <Link to="/profile" className="text-white hover:text-gray-200 flex items-center gap-2">
+                  {currentUser.avatar ? (
+                    <img
+                      src={currentUser.avatar || "/placeholder.svg"}
+                      alt={currentUser.name}
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
+                  ) : (
+                    <User size={24} />
+                  )}
+                  <span className="hidden md:inline">{currentUser.name}</span>
                 </Link>
-                <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded" onClick={handleLogout}>
-                  Вийти
+                <button
+                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded flex items-center gap-2"
+                  onClick={handleLogout}
+                >
+                  <LogOut size={18} />
+                  <span className="hidden md:inline">Вийти</span>
                 </button>
-              </>
+              </div>
             ) : (
               <button
                 className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
@@ -119,9 +132,9 @@ const Navbar = () => {
                 )}
               </Link>
 
-              <button className="hover:text-gray-300">
+              <Link to="/profile" className="hover:text-gray-300">
                 <User size={20} />
-              </button>
+              </Link>
 
               <Link to="/cart" className="relative hover:text-gray-300">
                 <ShoppingCart size={20} />
@@ -136,7 +149,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {isAuthFormVisible && <AuthForm closeForm={handleAuthFormToggle} setIsAuthenticated={setIsAuthenticated} />}
+      {isAuthFormVisible && <AuthForm closeForm={handleAuthFormToggle} setIsAuthenticated={() => {}} />}
     </header>
   )
 }
