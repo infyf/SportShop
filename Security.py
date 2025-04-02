@@ -110,10 +110,10 @@ timest3 =ssl.cert_time_to_seconds("Mar 29 13:49:10 2025 GMT")
 timest3 
 print(datetime.utcfromtimestamp(timest3)) 
 ssl.enum_certificates("CA") 
-try: 
-    import ssl 
-except ImportError: 
-    pass 
-context = ssl.create_default_context() 
-cont3 = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
-cont3.load_verify_locations("/etc/ssl/certs/ca-bundle.crt")
+context2.cert_store_stats() 
+context2.set_ciphers('ECDHE+AESGCM:!ECDSA') 
+context2.get_ciphers
+
+smtp = smtplib.SMTP("http://localhost:3000/", port=3000)
+context = ssl.create_default_context()
+smtp.starttls(context=context)
