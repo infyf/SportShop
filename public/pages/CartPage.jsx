@@ -1,12 +1,19 @@
 
-import { Link } from "react-router-dom"
-import { ShoppingCart, ArrowLeft, Trash, Plus, Minus } from "lucide-react"
+import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { ShoppingCart, ArrowLeft, Trash, Plus, Minus, CheckCircle } from "lucide-react"
 import { useCart } from "../components/context/CartContext"
+import { useAuth } from "../components/context/AuthContext"
 
 const CartPage = () => {
   const { cart, clearCart, getCartTotal, updateQuantity, removeFromCart } = useCart()
+  const { isAuthenticated, addPurchase } = useAuth()
+  const navigate = useNavigate()
+  const [isProcessing, setIsProcessing] = useState(false)
+  const [isCompleted, setIsCompleted] = useState(false)
+  const [orderId, setOrderId] = useState("")
 
-  if (cart.length === 0) {
+  if (cart.length === 0 && !isCompleted) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center py-16 bg-white rounded-lg shadow-sm">
@@ -18,6 +25,79 @@ const CartPage = () => {
             className="mt-6 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
           >
             Перейти до каталогу
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
+  const handleCheckout = () => {
+    if (!isAuthenticated) {
+      // якщо користувач не авторизований,
+      if (window.confirm("Для збереження історії покупок потрібно увійти в систему. Перейти до входу?")) {
+        navigate("/")
+        return
+      }
+    }
+
+    setIsProcessing(true)
+
+    // симулюція обробку замовлення
+    setTimeout(() => {
+      // генерація унікальний ID замовлення
+      const newOrderId = `ORD-${Date.now().toString().slice(-6)}`
+      setOrderId(newOrderId)
+
+     
+      const purchase = {
+        orderId: newOrderId,
+        date: new Date().toISOString(),
+        items: [...cart],
+        totalAmount: getCartTotal(),
+        status: "completed",
+      }
+
+      // додавання замовлення до історії покупок
+      if (isAuthenticated) {
+        addPurchase(purchase)
+      }
+
+     
+      clearCart()
+
+      
+      setIsProcessing(false)
+      setIsCompleted(true)
+    }, 1000)
+  }
+
+  if (isCompleted) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="text-center py-16 bg-white rounded-lg shadow-sm">
+          <CheckCircle size={64} className="mx-auto text-green-500" />
+          <h2 className="mt-4 text-2xl font-bold text-gray-900">Замовлення успішно оформлено!</h2>
+          <p className="mt-2 text-gray-600">
+            Дякуємо за покупку. Номер вашого замовлення: <span className="font-bold">{orderId}</span>
+          </p>
+
+          {isAuthenticated && (
+            <div className="mt-4">
+              <p className="text-gray-600">
+                Ви можете переглянути деталі замовлення в{" "}
+                <Link to="/profile" className="text-blue-600 hover:underline">
+                  історії покупок
+                </Link>
+                .
+              </p>
+            </div>
+          )}
+
+          <Link
+            to="/catalog"
+            className="mt-6 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+          >
+            Продовжити покупки
           </Link>
         </div>
       </div>
@@ -111,12 +191,26 @@ const CartPage = () => {
               <span>{getCartTotal().toFixed(2)} ₴</span>
             </div>
 
-            <Link
-              to="/checkout"
-              className="w-full block text-center bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            <button
+              onClick={handleCheckout}
+              disabled={isProcessing}
+              className="w-full block text-center bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors disabled:bg-blue-400"
             >
-              Оформити замовлення
-            </Link>
+              {isProcessing ? (
+                <>
+                  <span className="inline-block mr-2 h-4 w-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                  Обробка...
+                </>
+              ) : (
+                "Оформити замовлення"
+              )}
+            </button>
+
+            {!isAuthenticated && (
+              <p className="mt-4 text-sm text-gray-600 text-center">
+                Увійдіть в систему, щоб зберегти історію замовлень у вашому профілі
+              </p>
+            )}
           </div>
         </div>
       </div>
