@@ -1,9 +1,7 @@
-
-
 import { createContext, useContext, useState, useEffect } from "react"
 
-
 const AuthContext = createContext()
+
 
 export const useAuth = () => {
   return useContext(AuthContext)
@@ -19,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const [loading, setLoading] = useState(true)
 
-  
+ 
   useEffect(() => {
     if (currentUser) {
       localStorage.setItem("user", JSON.stringify(currentUser))
@@ -29,9 +27,9 @@ export const AuthProvider = ({ children }) => {
     setLoading(false)
   }, [currentUser])
 
-  // функція для реєстрації користувача
+
   const register = (email, password, name) => {
-    // тут повинен бути запит до Апі Владе
+  
     const newUser = {
       id: Date.now().toString(),
       email,
@@ -43,18 +41,38 @@ export const AuthProvider = ({ children }) => {
       address: "",
       purchaseHistory: [],
       createdAt: new Date().toISOString(),
+      role: "user", 
     }
 
     setCurrentUser(newUser)
     return Promise.resolve(newUser)
   }
 
-  
+ 
   const login = (email, password) => {
-    // також запит 
-    // тест та просто перевірка  чи є користувач з таким email в localStorage
+    //  тут був и запит до API
+  
     const savedUser = localStorage.getItem("user")
     const user = savedUser ? JSON.parse(savedUser) : null
+
+    // адмін панель для  адміністратор
+    if (email === "admin@admin.com" && password === "admin") {
+      const adminUser = {
+        id: "admin1",
+        email: "admin@admin.com",
+        name: "Адміністратор",
+        avatar: null,
+        firstName: "Адмін",
+        lastName: "Системи",
+        phone: "+380991234567",
+        address: "м. Київ, вул. Адміністративна, 1",
+        purchaseHistory: [],
+        createdAt: "2025-01-01T00:00:00",
+        role: "admin",
+      }
+      setCurrentUser(adminUser)
+      return Promise.resolve(adminUser)
+    }
 
     if (user && user.email === email) {
       setCurrentUser(user)
@@ -70,7 +88,6 @@ export const AuthProvider = ({ children }) => {
     return Promise.resolve()
   }
 
-  
   const updateProfile = (userData) => {
     setCurrentUser((prevUser) => ({
       ...prevUser,
@@ -79,7 +96,7 @@ export const AuthProvider = ({ children }) => {
     return Promise.resolve()
   }
 
-  // функція для додавання покупки в історію
+
   const addPurchase = (purchase) => {
     setCurrentUser((prevUser) => ({
       ...prevUser,
@@ -87,6 +104,7 @@ export const AuthProvider = ({ children }) => {
     }))
     return Promise.resolve()
   }
+
 
   const value = {
     currentUser,
@@ -102,3 +120,4 @@ export const AuthProvider = ({ children }) => {
   return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>
 }
 
+export default AuthProvider
