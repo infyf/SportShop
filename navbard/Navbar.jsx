@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { Search, Headphones, Heart, User, ShoppingCart, Menu, LogOut } from "lucide-react"
@@ -54,6 +56,14 @@ const Navbar = () => {
               >
                 Розміщення товарів
               </Link>
+              {isAuthenticated && currentUser.role === "admin" && (
+                <Link
+                  to="/admin/security"
+                  className="text-white px-3 py-1 rounded-md transition-all duration-300 hover:bg-white/20"
+                >
+                  Панель безпеки
+                </Link>
+              )}
             </div>
 
             {isAuthenticated ? (
@@ -155,4 +165,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
