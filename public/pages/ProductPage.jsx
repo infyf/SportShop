@@ -55,7 +55,7 @@ const ProductPage = () => {
         },
         quantity,
       )
-      // Прибрано алерт
+  
     }
   }
 
