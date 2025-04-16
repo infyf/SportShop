@@ -1,12 +1,10 @@
-"use client"
-
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { User, Upload, ShoppingBag, Settings, Edit, Save, X } from "lucide-react"
+import { User, Upload, ShoppingBag, Settings, Edit, Save, X, AlertTriangle } from "lucide-react"
 import { useAuth } from "../components/context/AuthContext"
 
 const ProfilePage = () => {
-  const { currentUser, isAuthenticated, updateProfile } = useAuth()
+  const { currentUser, isAuthenticated, updateProfile, logout } = useAuth()
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState("profile")
   const [isEditing, setIsEditing] = useState(false)
@@ -19,7 +17,23 @@ const ProfilePage = () => {
   })
   const fileInputRef = useRef(null)
 
-  // Якщо користувач не авторизований, показуємо повідомлення
+  const [notification, setNotification] = useState({ show: false, message: "", type: "" })
+  const [passwordData, setPasswordData] = useState({
+    currentPassword: "",
+    newPassword: "",
+    confirmPassword: "",
+  })
+  const [deleteConfirm, setDeleteConfirm] = useState(false)
+
+  useEffect(() => {
+    if (notification.show) {
+      const timer = setTimeout(() => {
+        setNotification({ show: false, message: "", type: "" })
+      }, 5000)
+      return () => clearTimeout(timer)
+    }
+  }, [notification.show])
+
   if (!isAuthenticated) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -44,6 +58,20 @@ const ProfilePage = () => {
       const reader = new FileReader()
       reader.onloadend = () => {
         updateProfile({ avatar: reader.result })
+          .then(() => {
+            setNotification({
+              show: true,
+              message: "Аватар успішно оновлено",
+              type: "success",
+            })
+          })
+          .catch((error) => {
+            setNotification({
+              show: true,
+              message: "Помилка при оновленні аватару",
+              type: "error",
+            })
+          })
       }
       reader.readAsDataURL(file)
     }
@@ -59,11 +87,111 @@ const ProfilePage = () => {
 
   const handleSaveProfile = () => {
     updateProfile(formData)
-    setIsEditing(false)
+      .then(() => {
+        setIsEditing(false)
+        setNotification({
+          show: true,
+          message: "Профіль успішно оновлено",
+          type: "success",
+        })
+      })
+      .catch((error) => {
+        setNotification({
+          show: true,
+          message: "Помилка при оновленні профілю",
+          type: "error",
+        })
+      })
+  }
+
+  const handlePasswordChange = (e) => {
+    const { name, value } = e.target
+    setPasswordData((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleChangePassword = () => {
+    if (!passwordData.currentPassword || !passwordData.newPassword || !passwordData.confirmPassword) {
+      setNotification({
+        show: true,
+        message: "Будь ласка, заповніть всі поля",
+        type: "error",
+      })
+      return
+    }
+
+    if (passwordData.newPassword !== passwordData.confirmPassword) {
+      setNotification({
+        show: true,
+        message: "Новий пароль та підтвердження не співпадають",
+        type: "error",
+      })
+      return
+    }
+
+    updateProfile({ password: passwordData.newPassword })
+      .then(() => {
+        setNotification({
+          show: true,
+          message: "Пароль успішно змінено!",
+          type: "success",
+        })
+        setPasswordData({
+          currentPassword: "",
+          newPassword: "",
+          confirmPassword: "",
+        })
+      })
+      .catch((error) => {
+        setNotification({
+          show: true,
+          message: "Помилка при зміні паролю",
+          type: "error",
+        })
+      })
+  }
+
+  const handleDeleteAccount = () => {
+    if (!deleteConfirm) {
+      setDeleteConfirm(true)
+      return
+    }
+
+    logout()
+      .then(() => {
+        setNotification({
+          show: true,
+          message: "Ваш акаунт було успішно видалено",
+          type: "success",
+        })
+        setTimeout(() => {
+          navigate("/")
+        }, 2000)
+      })
+      .catch((error) => {
+        setNotification({
+          show: true,
+          message: "Помилка при видаленні акаунту",
+          type: "error",
+        })
+      })
   }
 
   const renderProfileTab = () => (
     <div className="bg-white rounded-lg shadow-md p-6">
+      {notification.show && activeTab === "profile" && (
+        <div
+          className={`mb-6 p-4 rounded-lg flex items-center gap-2 ${
+            notification.type === "success" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+          }`}
+        >
+          {notification.type === "error" && <AlertTriangle size={20} />}
+          {notification.message}
+        </div>
+      )}
+
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Особиста інформація</h2>
         {!isEditing ? (
@@ -245,23 +373,56 @@ const ProfilePage = () => {
   const renderSettingsTab = () => (
     <div className="bg-white rounded-lg shadow-md p-6">
       <h2 className="text-2xl font-bold mb-6">Налаштування</h2>
+
+      {notification.show && activeTab === "settings" && (
+        <div
+          className={`mb-6 p-4 rounded-lg flex items-center gap-2 ${
+            notification.type === "success" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+          }`}
+        >
+          {notification.type === "error" && <AlertTriangle size={20} />}
+          {notification.message}
+        </div>
+      )}
+
       <div className="space-y-6">
         <div>
           <h3 className="text-lg font-medium mb-2">Зміна паролю</h3>
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium mb-1">Поточний пароль</label>
-              <input type="password" className="w-full p-2 border rounded" />
+              <input
+                type="password"
+                name="currentPassword"
+                value={passwordData.currentPassword}
+                onChange={handlePasswordChange}
+                className="w-full p-2 border rounded"
+              />
             </div>
             <div>
               <label className="block text-sm font-medium mb-1">Новий пароль</label>
-              <input type="password" className="w-full p-2 border rounded" />
+              <input
+                type="password"
+                name="newPassword"
+                value={passwordData.newPassword}
+                onChange={handlePasswordChange}
+                className="w-full p-2 border rounded"
+              />
             </div>
             <div>
               <label className="block text-sm font-medium mb-1">Підтвердження паролю</label>
-              <input type="password" className="w-full p-2 border rounded" />
+              <input
+                type="password"
+                name="confirmPassword"
+                value={passwordData.confirmPassword}
+                onChange={handlePasswordChange}
+                className="w-full p-2 border rounded"
+              />
             </div>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+            <button
+              onClick={handleChangePassword}
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+            >
               Змінити пароль
             </button>
           </div>
@@ -272,9 +433,38 @@ const ProfilePage = () => {
           <p className="text-gray-600 mb-4">
             Увага! Видалення акаунту призведе до втрати всіх ваших даних та історії покупок. Ця дія незворотня.
           </p>
-          <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors">
-            Видалити акаунт
-          </button>
+          {deleteConfirm ? (
+            <div className="space-y-4">
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-800">
+                <div className="flex items-center gap-2 mb-2">
+                  <AlertTriangle size={20} />
+                  <span className="font-bold">Ви впевнені?</span>
+                </div>
+                <p>Це назавжди видалить ваш акаунт та всі пов'язані з ним дані.</p>
+              </div>
+              <div className="flex gap-3">
+                <button
+                  onClick={handleDeleteAccount}
+                  className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors"
+                >
+                  Так, видалити мій акаунт
+                </button>
+                <button
+                  onClick={() => setDeleteConfirm(false)}
+                  className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition-colors"
+                >
+                  Скасувати
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={handleDeleteAccount}
+              className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors"
+            >
+              Видалити акаунт
+            </button>
+          )}
         </div>
       </div>
     </div>
@@ -352,4 +542,3 @@ const ProfilePage = () => {
 }
 
 export default ProfilePage
-
