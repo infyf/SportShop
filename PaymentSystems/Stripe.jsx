@@ -1,21 +1,26 @@
+// Інтеграція зі Stripe, PayPal, Fondy або LiqPay 
 import React, {useState} from 'react'; 
-import {PayPalScriptProvider, PayPalButtons} from "@paypal/react-paypal-js"; 
-// Create a object for PayPal 
-const PayPal = () => 
-{ 
-    return( 
-        <PayPalScriptProvider options = {{"client-id": ""}} > 
-        <PayPalButtons createOrder={(data, actions)=> { 
-            return actions.order.create({ 
-                purchase_units: [{amount: {value: "15.00"}}],
-            });
-        }}
-        onApprove={(data, actions) => { 
-            return actions.order.capture().then((details)=>{ 
-                alert('Transaction is complete')
-            })
-        }}  
-        />
-        </PayPalScriptProvider>
-    );
-}; export default PayPal;
+const StripeIntegrations = () =>{  
+    const [paymentStatus, setPayStatus] = useState(''); 
+    const handlePay = async () => 
+    {
+    const stripe = window.Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx') ;
+    const {error } = await stripe.redirectToCheckOut({ 
+        sessionId: 'cs_test_a11YYufWQzNY63zpQ6QSNRQhkUpVph4WRmzW0zWJO2znZKdVujZ0N0S22u',
+    }); 
+    if(error) 
+    { 
+    setPayStatus('Error: ' + error.message);
+    } 
+    else{ 
+        setPayStatus('Success');
+    } 
+  
+    }; 
+    return(
+        <div> 
+            <button onClick={handlePay}>Pay</button>
+            <p>{paymentStatus}</p>
+        </div>
+    ); 
+};export default StripeIntegrations;
