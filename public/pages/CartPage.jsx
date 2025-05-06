@@ -1,9 +1,9 @@
-
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { ShoppingCart, ArrowLeft, Trash, Plus, Minus, CheckCircle } from "lucide-react"
 import { useCart } from "../components/context/CartContext"
 import { useAuth } from "../components/context/AuthContext"
+import CheckoutForm from "./CheckoutForm"
 
 const CartPage = () => {
   const { cart, clearCart, getCartTotal, updateQuantity, removeFromCart } = useCart()
@@ -12,6 +12,8 @@ const CartPage = () => {
   const [isProcessing, setIsProcessing] = useState(false)
   const [isCompleted, setIsCompleted] = useState(false)
   const [orderId, setOrderId] = useState("")
+  const [showCheckoutForm, setShowCheckoutForm] = useState(false)
+  const [customerInfo, setCustomerInfo] = useState(null)
 
   if (cart.length === 0 && !isCompleted) {
     return (
@@ -40,6 +42,12 @@ const CartPage = () => {
       }
     }
 
+    // Показуємо форму замість прямого оформлення
+    setShowCheckoutForm(true)
+  }
+
+  const handleFormSubmit = (formData) => {
+    setCustomerInfo(formData)
     setIsProcessing(true)
 
     // симулюція обробку замовлення
@@ -48,13 +56,13 @@ const CartPage = () => {
       const newOrderId = `ORD-${Date.now().toString().slice(-6)}`
       setOrderId(newOrderId)
 
-     
       const purchase = {
         orderId: newOrderId,
         date: new Date().toISOString(),
         items: [...cart],
         totalAmount: getCartTotal(),
         status: "completed",
+        customerInfo: formData, // Зберігаємо інформацію про клієнта
       }
 
       // додавання замовлення до історії покупок
@@ -62,10 +70,8 @@ const CartPage = () => {
         addPurchase(purchase)
       }
 
-     
       clearCart()
 
-      
       setIsProcessing(false)
       setIsCompleted(true)
     }, 1000)
@@ -80,6 +86,20 @@ const CartPage = () => {
           <p className="mt-2 text-gray-600">
             Дякуємо за покупку. Номер вашого замовлення: <span className="font-bold">{orderId}</span>
           </p>
+
+          {customerInfo && (
+            <div className="mt-4 text-left max-w-md mx-auto bg-gray-50 p-4 rounded-lg">
+              <h3 className="font-medium mb-2">Інформація про доставку:</h3>
+              <p>{customerInfo.fullName}</p>
+              <p>{customerInfo.email}</p>
+              <p>{customerInfo.phone}</p>
+              <p>{customerInfo.address}</p>
+              <p>
+                {customerInfo.city}, {customerInfo.postalCode}
+              </p>
+              <p>Спосіб оплати: {customerInfo.paymentMethod}</p>
+            </div>
+          )}
 
           {isAuthenticated && (
             <div className="mt-4">
@@ -101,6 +121,17 @@ const CartPage = () => {
           </Link>
         </div>
       </div>
+    )
+  }
+
+  // Якщо показуємо форму оформлення замовлення
+  if (showCheckoutForm) {
+    return (
+      <CheckoutForm
+        onSubmit={handleFormSubmit}
+        onCancel={() => setShowCheckoutForm(false)}
+        cartTotal={getCartTotal()}
+      />
     )
   }
 
@@ -219,4 +250,3 @@ const CartPage = () => {
 }
 
 export default CartPage
-
