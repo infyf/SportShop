@@ -17,7 +17,22 @@
       },
       {
         "id": 2,
-        "name": "Бігові кросівки Adidas Ultraboost",
+        "name": "Футбольний набір Zeus KIT PROMO темно-синій BLU Z00498",
+        "price": 2180,
+        "description": "Костюм відмінно підійде для гри у футбол, фітнесу, бігу та занять у спортзалі. Виготовлений з поліестеру.",
+        "image": "https://football-world.com.ua/product-images/default/Zeus/40353-65423e3850ecc.webp",
+        "category": "football-uniforms",
+        "inStock": 5,
+        "specifications": {
+          "size": "XL",
+          "material": "Поліестер",
+          "weight": "500-700 г",
+          "type": "Бігові"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Бігові кросівки Adidas Ultraboost Light IE3333",
         "price": 4999,
         "description": "Інноваційні бігові кросівки з технологією Boost для максимального комфорту та енергоповернення під час бігу.",
         "image": "https://content.rozetka.com.ua/goods/images/big/423898051.jpg",
@@ -29,10 +44,1429 @@
           "weight": "300 г",
           "type": "Бігові"
         }
+      },
+      {
+        "id": 4,
+        "name": "Чоловічі сороконіжки Adidas Deportivo III Tf IF1408",
+        "price": 1499,
+        "description": "Бігові сороконіжки для максимального конфорту та бігу. Виготовлений з текстилю та плотної синтетичної тканини.",
+        "image": "https://content2.rozetka.com.ua/goods/images/big/501142280.jpg",
+        "category": "football-boots",
+        "inStock": 5,
+        "specifications": {
+          "size": "45,5",
+          "material": "Текстиль",
+          "weight": "270-320 г",
+          "type": "Бігові"
+        }
+      },
+      {
+      "id": 5,
+      "name": "Чоловічий комплект Одягнений X-Shadow",
+      "price": 1379,
+      "description": "X-Shadow Чоловічий спортивний одяг 5 в 1 для бігу подарує вам чудовий досвід використання та взаємодії в таких напрямках, як Фитнес , біг, бокс, ходьба, різні тренування м'язів тощо.\nСама тканина має функції поглинання вологи, швидкого висихання та потовиділення, усуває відчуття теплового удару, що рухається, не залишає відчуття липкості навіть за інтенсивних вправ.",
+      "image": "https://images.prom.ua/3772815597_w640_h640_muzhskoj-komplekt-odezhdy.jpg",
+      "category": "running-clothes",
+      "inStock": 5,
+      "specifications": {
+        "size": "XL",
+        "material": "Поліер/Спандекс",
+        "weight": "500-700 г",
+        "type": "Бігові"
       }
-      
-      
-    ]
+    },
+    {
+      "id": 6,
+      "name": "Спортивна сумка Xiamen RanBag",
+      "price": 225,
+      "description": "Ця компактна та стильна сумка ідеально підходить для активних людей. Розмір 20x10x2 см дозволяє зручно носити основні речі — ключі, смартфон, карти чи гроші. Легкий і міцний матеріал, регульований поясний ремінь і сучасний дизайн роблять сумку чудовим вибором для бігунів та прихильників активного відпочинку.",
+      "image": "https://images.prom.ua/6450611015_w640_h640_sumka-dlya-bigu.jpg",
+      "category": "running-accessories",
+      "inStock": 15,
+      "specifications": {
+        "size": "20x10x2 см",
+        "material": "Неопрен",
+        "weight": "0,1 кг",
+        "type": "Аксесуар"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Тренажер Supretto Топ Фіт з еспандерами",
+      "price": 275,
+      "description": "Тренажер Supretto Топ Фіт з еспандерами — це ідеальний інструмент для тих, хто хоче покращити свою фізичну форму, зміцнити м'язи та зробити тренування більш ефективними, не виходячи з дому.\nЗавдяки компактному дизайну та універсальності, він підходить для використання як новачками, так і досвідченими спортсменами.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/17315981.jpg",
+      "category": "fitness-equipment",
+      "inStock": 10,
+      "specifications": {
+        "size": "30–50х20х10–15",
+        "material": "Високоякісний пластик/М'яке покриття з ПВХ",
+        "weight": "1 кг",
+        "type": "Трубчасті"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Гантелі для фітнесу Neo Sport 2 шт.",
+      "price": 249,
+      "description": "Гантелі Neo Sport — ідеальний вибір для тих, хто хоче покращити свою фізичну форму та досягти кращих результатів у тренуваннях. Виготовлені з високоякісних матеріалів, ці гантелі мають міцну та зносостійку поверхню, що гарантує тривалий термін служби.\n\nОсобливості:\n- Високоякісні матеріали\n- Комфортні ергономічні ручки\n- Ідеальні для домашніх і спортивних залів",
+      "image": "https://content.rozetka.com.ua/goods/images/big/183609865.jpg",
+      "category": "weights",
+      "inStock": 6,
+      "specifications": {
+        "size": "20-25 см",
+        "material": "Пластик",
+        "weight": "2 кг",
+        "type": "Фітнес-обладнання"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Килимок для фітнесу тришаровий IVN",
+      "price": 592,
+      "description": "Килимок для фітнесу IVN – це ідеальний аксесуар для ваших тренувань, виготовлений з трьох шарів високоякісних матеріалів, що забезпечують максимальний комфорт і надійність.\nЗі своїми розмірами 1800x600x15 мм, цей килимок ідеально підходить для різноманітних вправ, включаючи йогу, пілатес, стретчінг і силові тренування.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/209140682.jpg",
+      "category": "mats",
+      "inStock": 5,
+      "specifications": {
+        "size": "1800х600х15 мм",
+        "material": "TPE (термопластичний еластомер)",
+        "weight": "1,2–1,5 кг",
+        "type": "Фітнес-обладнання"
+      }
+    },
+        {
+      "id": 10,
+      "name": "Футбольний м'яч Adidas UCL CLB JH1286",
+      "price": 1087,
+      "description": "Високоякісний футбольний м’яч для тренувань та аматорських матчів. Має міцну текстуру та гарну стійкість до зношування.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/545841556.jpg",
+      "category": "football-balls",
+      "inStock": 5,
+      "specifications": {
+        "size": "40",
+        "material": "Термополіуретан",
+        "weight": "303 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Футбольний м'яч Puma Big Cat ball",
+      "price": 1230,
+      "description": "Ідеальний варіант для щоденних тренувань. М’яч забезпечує відмінний контроль та стабільність польоту.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/484759365.jpg",
+      "category": "football-balls",
+      "inStock": 8,
+      "specifications": {
+        "size": "40-45",
+        "material": "Термополіуретан",
+        "weight": "1324 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Футбольний м'яч Puma Orbita 6 MS 084335-05",
+      "price": 1801,
+      "description": "Створений для гри на будь-якій поверхні. Має посилену конструкцію та довговічне покриття.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/526517427.png",
+      "category": "football-balls",
+      "inStock": 10,
+      "specifications": {
+        "size": "40-45",
+        "material": "Текстиль, Термополіуретан",
+        "weight": "958 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Футбольний м'яч Puma Orbita 6 MS",
+      "price": 1022,
+      "description": "Надійний м'яч із високим рівнем зчеплення та точністю польоту. Підходить як для дітей, так і для дорослих.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/484768690.jpg",
+      "category": "football-balls",
+      "inStock": 12,
+      "specifications": {
+        "size": "40-45",
+        "material": "Поліестер",
+        "weight": "1448 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Футбольний м'яч Cornix IronKick XR-0380",
+      "price": 1041,
+      "description": "Виготовлений з високоякісного поліуретану. Підходить для гри на штучному та натуральному покритті.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/519841343.jpg",
+      "category": "football-balls",
+      "inStock": 8,
+      "specifications": {
+        "size": "40",
+        "material": "Термополіуретан",
+        "weight": "1318 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Футбольний м'яч IVN REAL MADRID",
+      "price": 1375,
+      "description": "М’яч з гарним балансом ваги та міцною внутрішньою камерою. Стійкий до деформацій.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/548038799.jpg",
+      "category": "football-balls",
+      "inStock": 15,
+      "specifications": {
+        "size": "40",
+        "material": "Поліуретан",
+        "weight": "410-440г ",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Футбольний м'яч Select Classic v25 004",
+      "price": 1240,
+      "description": "Ідеальний м’яч для аматорських змагань. Має елегантний дизайн і приємну на дотик поверхню.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/535027927.jpg",
+      "category": "football-balls",
+      "inStock": 8,
+      "specifications": {
+        "size": "40",
+        "material": "Поліуретан",
+        "weight": "610 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Футбольний м'яч Cornix Shadow Dribble XR-0374",
+      "price": 1315,
+      "description": "Легкий у керуванні м'яч для юнацьких тренувань. Підходить для внутрішнього і зовнішнього використання.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/519841422.jpg",
+      "category": "football-balls",
+      "inStock": 19,
+      "specifications": {
+        "size": "40",
+        "material": "Термополіуретан",
+        "weight": "400-420 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Футбольний м'яч Select Team Fifa Basic DB v25",
+      "price": 1100,
+      "description": "Професійний м'яч з сертифікатом якості. Показує чудову динаміку при ударах.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/535027023.jpg",
+      "category": "football-balls",
+      "inStock": 11,
+      "specifications": {
+        "size": "40-45",
+        "material": "Поліестер",
+        "weight": "990 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Футбольний м'яч Adidas FCWC CLB",
+      "price": 1368,
+      "description": "Міцний і надійний м’яч з посиленими швами. Ідеально підходить для шкільних тренувань.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/545841553.jpg",
+      "category": "football-balls",
+      "inStock": 16,
+      "specifications": {
+        "size": "40",
+        "material": "Термополіуретан",
+        "weight": "1403 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Футбольна форма Europaw 027 салатово-темно-синя",
+      "price": 750,
+      "description": "Зручний комплект футбольної форми з дихаючої тканини. Ідеально підходить для активних ігор.",
+      "image": "https://football-world.com.ua/product-images/default/Europaw/22514-61034b0525359.webp",
+      "category": "football-uniforms",
+      "inStock": 10,
+      "specifications": {
+        "size": "ХL",
+        "material": "Поліестер",
+        "weight": "150–250 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Футбольна форма Europaw 024 темно-синьо-жовтогаряча",
+      "price": 1061,
+      "description": "Ергономічний крій та легкий матеріал забезпечують максимальну свободу рухів на полі.",
+      "image": "https://football-world.com.ua/product-images/default/Europaw/22496-61034abf21c89.webp",
+      "category": "football-uniforms",
+      "inStock": 7,
+      "specifications": {
+        "size": "L",
+        "material": "Поліестер",
+        "weight": "200 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Футбольна форма Kelme VALENCIA синьо-біла",
+      "price": 755,
+      "description": "Професійна форма з сучасним дизайном. Швидко сохне та зберігає форму після прання.",
+      "image": "https://football-world.com.ua/product-images/default/Kelme/23879-610353dc76387.webp",
+      "category": "football-uniforms",
+      "inStock": 6,
+      "specifications": {
+        "size": "L",
+        "material": "Поліестер",
+        "weight": "230 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Комплект футбольної форми Kelme DINAMO білий",
+      "price": 1167,
+      "description": "Завдяки матеріалу, комплект не утворює складок, міцний і стійкий до впливів навколишнього середовища. Забезпечує комфорт під час гри.",
+      "image": "https://football-world.com.ua/product-images/default/Kelme/24982-61035ab83a564.webp",
+      "category": "football-uniforms",
+      "inStock": 6,
+      "specifications": {
+        "size": "L",
+        "material": "Поліестер",
+        "weight": "368 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Комплект футбольної форми Europaw 029 SLAVA чорно-сірий",
+      "price": 1062,
+      "description": "Якісний набір для аматорських матчів та тренувань. Добре прилягає до тіла.",
+      "image": "https://football-world.com.ua/product-images/default/Europaw/30142-6288f3f83bb92.webp",
+      "category": "football-uniforms",
+      "inStock": 8,
+      "specifications": {
+        "size": "L",
+        "material": "Поліестер",
+        "weight": "222 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Футбольна форма Europaw 027W блакитно-біла",
+      "price": 1020,
+      "description": "Надійна форма з міцними швами, що витримують інтенсивні навантаження.",
+      "image": "https://football-world.com.ua/product-images/default/Europaw/22530-61034b40f0d85.webp",
+      "category": "football-uniforms",
+      "inStock": 12,
+      "specifications": {
+        "size": "L",
+        "material": "Поліестер",
+        "weight": "233 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Комплект футбольної форми Joma WINNER синьо-жовтий",
+      "price": 1220,
+      "description": "Футболка з коротким рукавом і круглим коміром. Відрізняється особливим дизайном із виносом бічних швів уперед і вишитим логотипом.",
+      "image": "https://football-world.com.ua/product-images/default/Joma/48179-67c9522cbcd91.webp",
+      "category": "football-uniforms",
+      "inStock": 9,
+      "specifications": {
+        "size": "M/XL",
+        "material": "Поліестер",
+        "weight": "469 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Футбольна форма Europaw 009 рожево-темно-синя",
+      "price": 440,
+      "description": "Виготовлена з вологовідвідного матеріалу. Ідеальний варіант для командних змагань.",
+      "image": "https://football-world.com.ua/product-images/default/Europaw/22418-61034a4e52ea2.webp",
+      "category": "football-uniforms",
+      "inStock": 19,
+      "specifications": {
+        "size": "XL",
+        "material": "Поліестер",
+        "weight": "421 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Комплект футбольної форми Joma DANUBIO чорно-жовтий",
+      "price": 1115,
+      "description": "Комплект із двох предметів, що складається з футболки з короткими рукавами та шорт із еластичним поясом, регульованим шнурком на талії. Тип крою приталений.",
+      "image": "https://football-world.com.ua/product-images/default/Joma/37666-64831706c9961.webp",
+      "category": "football-uniforms",
+      "inStock": 8,
+      "specifications": {
+        "size": "XL",
+        "material": "Поліестер",
+        "weight": "664 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Комплект футбольної форми Joma PHOENIX II чорно-жовтогарячий",
+      "price": 1599,
+      "description": "Комплект складається з футболки з коротким рукавом та шорт. Цей спортивний набір був розроблений, щоб супроводжувати вас під час тренувань з футболу та футзалу.",
+      "image": "https://football-world.com.ua/product-images/default/Joma/41250-6599579ab8b77.webp",
+      "category": "football-uniforms",
+      "inStock": 13,
+      "specifications": {
+        "size": "L",
+        "material": "Поліестер",
+        "weight": "840 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Бігові чоловічі кросівки для бігу Puma Softride",
+      "price": 2784,
+      "description": "Зручні кросівки з м’якою устілкою та хорошою амортизацією. Підходять для щоденних пробіжок.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/504455645.jpg",
+      "category": "running-shoes",
+      "inStock": 10,
+      "specifications": {
+        "size": "44",
+        "material": "Текстиль",
+        "weight": "300–350 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 31,
+      "name": "Бігові жіночі кросівки для бігу Adidas Galaxy 7",
+      "price": 2780,
+      "description": "Модна модель з легкою конструкцією. Підошва забезпечує надійне зчеплення з будь-якою поверхнею.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/446433939.jpg",
+      "category": "running-shoes",
+      "inStock": 7,
+      "specifications": {
+        "size": "41,5",
+        "material": "Текстиль",
+        "weight": "357 г",
+        "type": "Весняний, Літній, Осінній"
+      }
+    },
+    {
+      "id": 32,
+      "name": "Чоловічі кросівки для бігу Skechers 52631",
+      "price": 2829,
+      "description": "Дихаючий верх і підтримка стопи під час бігу. Підходять для асфальту та бігових доріжок.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/331058074.jpg",
+      "category": "running-shoes",
+      "inStock": 13,
+      "specifications": {
+        "size": "45",
+        "material": "Текстиль",
+        "weight": "368 г",
+        "type": "Весняний, Літній, Осінній"
+      }
+    },
+    {
+      "id": 33,
+      "name": "Чоловічі кросівки для бігу Asics Gel-Excite 10",
+      "price": 2050,
+      "description": "Спеціально розроблені для середніх та довгих дистанцій. Максимальний комфорт та підтримка.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/534162555.jpg",
+      "category": "running-shoes",
+      "inStock": 19,
+      "specifications": {
+        "size": "46",
+        "material": "Синтетика",
+        "weight": "399 г",
+        "type": "Весняний, Літній, Осінній"
+      }
+    },
+    {
+      "id": 34,
+      "name": "Чоловічі кросівки для бігу Salomon Xa Pro 3D",
+      "price": 1720,
+      "description": "Універсальні кросівки для фітнесу та бігу. Мають зносостійкий верх.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/409859659.png",
+      "category": "running-shoes",
+      "inStock": 17,
+      "specifications": {
+        "size": "44",
+        "material": "Текстиль",
+        "weight": "350 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 35,
+      "name": "Жіночі кросівки для бігу Puma Flexfocus Lite",
+      "price": 3330,
+      "description": "Стильна пара для активного способу життя. Чудово тримаються на нозі та не натирають.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/503024266.jpg",
+      "category": "running-shoes",
+      "inStock": 19,
+      "specifications": {
+        "size": "37",
+        "material": "Текстиль",
+        "weight": "350 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 36,
+      "name": "Чоловічі кросівки для бігу Adidas Runfalcon",
+      "price": 1866,
+      "description": "Підходять як для новачків, так і досвідчених спортсменів. Підтримка арки стопи.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/501436894.jpg",
+      "category": "running-shoes",
+      "inStock": 12,
+      "specifications": {
+        "size": "42",
+        "material": "Текстиль",
+        "weight": "340 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 37,
+      "name": "Жіночі кросівки для бігу Puma Softride",
+      "price": 1529,
+      "description": "Інноваційний дизайн і легка вага. Забезпечують комфорт навіть на великі дистанції.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/318271393.jpg",
+      "category": "running-shoes",
+      "inStock": 20,
+      "specifications": {
+        "size": "38,5",
+        "material": "Текстиль",
+        "weight": "379 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 38,
+      "name": "Чоловічі кросівки для бігу ASICS Gel-Excite 10",
+      "price": 3824,
+      "description": "Професійна модель з вентиляційними вставками. Підходить для інтенсивних тренувань.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/410516780.jpg",
+      "category": "running-shoes",
+      "inStock": 12,
+      "specifications": {
+        "size": "44",
+        "material": "Текстиль",
+        "weight": "329 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Жіночі кросівки для бігу Fila Megalite 6.0 W",
+      "price": 3700,
+      "description": "Кросівки з посиленою п’яткою та адаптивною амортизацією. Високий рівень стабільності.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/517856659.jpg",
+      "category": "running-shoes",
+      "inStock": 14,
+      "specifications": {
+        "size": "24,6",
+        "material": "Синтетика",
+        "weight": "267 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 40,
+      "name": "Чоловічі бутси Joma Maxima 2501 MAXS2501IN",
+      "price": 2710,
+      "description": "Міцна підошва для гри на штучному покритті. Стабільна фіксація стопи.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/526918885.jpg",
+      "category": "football-boots",
+      "inStock": 15,
+      "specifications": {
+        "size": "43",
+        "material": "Екошкіра",
+        "weight": "290 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 41,
+      "name": "Чоловічі сороконіжки Joma Top Flex 2401 TOPS2401TF",
+      "price": 2962,
+      "description": "Виготовлені з водостійкого матеріалу. Легкі, з оптимальним зчепленням.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/475376528.jpg",
+      "category": "football-boots",
+      "inStock": 14,
+      "specifications": {
+        "size": "44",
+        "material": "Шкіра",
+        "weight": "298 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 42,
+      "name": "Чоловічі футбольні бутси Joma Mundial 2401 MUNW2401IN",
+      "price": 2459,
+      "description": "Бутси з анатомічною формою. Покращують контроль м’яча під час гри.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/472230095.jpg",
+      "category": "football-boots",
+      "inStock": 13,
+      "specifications": {
+        "size": "41",
+        "material": "Шкіра",
+        "weight": "260 г",
+        "type": "Матчевий"
+      }
+    },
+    {
+      "id": 43,
+      "name": "Чоловічі футбольні бутси Joma Dribling 2402 DRIW2402IN",
+      "price": 2939,
+      "description": "Професійна модель для гри на полі будь-якого типу. Посилена п’ятка.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/472230044.jpg",
+      "category": "football-boots",
+      "inStock": 6,
+      "specifications": {
+        "size": "43,5",
+        "material": "Фібратек",
+        "weight": "280 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 44,
+      "name": "Чоловічі футбольні бутси Joma Top Flex 2401 TOPW2401IN",
+      "price": 4874,
+      "description": "Комфортна устілка та гарна амортизація. Ідеально сидять на нозі.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/457857386.jpg",
+      "category": "football-boots",
+      "inStock": 9,
+      "specifications": {
+        "size": "44",
+        "material": "Шкіра",
+        "weight": "365 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 45,
+      "name": "Футбольні бутси Joma Top Flex Rebound 2402 TORW2402IN",
+      "price": 1980,
+      "description": "Надійна пара для турнірів та тренувань. Стійка підошва та зручна посадка.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/482456773.jpg",
+      "category": "football-boots",
+      "inStock": 12,
+      "specifications": {
+        "size": "43",
+        "material": "Текстиль",
+        "weight": "381 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Футбольні бутси Joma Top Flex 2476 TOPW2476IN",
+      "price": 2025,
+      "description": "Зручний дизайн для швидких маневрів. Виготовлені з дихаючих матеріалів.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/482456663.jpg",
+      "category": "football-boots",
+      "inStock": 20,
+      "specifications": {
+        "size": "40",
+        "material": "Шкіра",
+        "weight": "360 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 47,
+      "name": "Футбольні бутси Joma Liga 5 2505 LIGS2505IN",
+      "price": 696,
+      "description": "Стильний зовнішній вигляд і функціональність. Підходять для будь-якого рівня гравців.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/526915064.jpg",
+      "category": "football-boots",
+      "inStock": 6,
+      "specifications": {
+        "size": "43,5",
+        "material": "Синтетика",
+        "weight": "333 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 48,
+      "name": "Футбольні бутси oma CANCHA CANW2401TF",
+      "price": 4300,
+      "description": "Легкі та міцні. Розроблені для швидких стартів та гальмувань.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/547168990.jpg",
+      "category": "football-boots",
+      "inStock": 15,
+      "specifications": {
+        "size": "41",
+        "material": "Текстиль",
+        "weight": "250 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 49,
+      "name": "Футбольні бутси Joma Xpander 2304",
+      "price": 1841,
+      "description": "Технологічна модель із покращеним захистом пальців. Оптимальна фіксація ноги.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/338677325.jpg",
+      "category": "football-boots",
+      "inStock": 13,
+      "specifications": {
+        "size": "44",
+        "material": "Поліестер",
+        "weight": "384 г",
+        "type": "Повсякденний"
+      }
+    },
+    {
+      "id": 50,
+      "name": "Спортивний костюм Under Armour Ua",
+      "price": 2369,
+      "description": "Стильний та зручний комплект для активних чоловіків, які цінують комфорт і якість",
+      "image": "https://content.rozetka.com.ua/goods/images/big/248753814.jpg",
+      "category": "running-clothes",
+      "inStock": 9,
+      "specifications": {
+        "size": "2XL",
+        "material": "Поліестер",
+        "weight": "600–700 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Спортивний костюм Puma Class Sweat Suit",
+      "price": 3712,
+      "description": "Ідеальний вибір для занять спортом. Має антибактеріальне покриття.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/511728655.jpg",
+      "category": "running-clothes",
+      "inStock": 11,
+      "specifications": {
+        "size": "S",
+        "material": "Бавовна/Поліестер",
+        "weight": "700 г",
+        "type": "Літній"
+      }
+    },
+    {
+      "id": 52,
+      "name": "Спортивний костюм жіночий Puma Poly Suit",
+      "price": 2559,
+      "description": "Якісний костюм з еластичної тканини. Забезпечує повну свободу рухів.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/503919089.jpg",
+      "category": "running-clothes",
+      "inStock": 16,
+      "specifications": {
+        "size": "S",
+        "material": "Поліестер",
+        "weight": "800 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 53,
+      "name": "Спортивний костюм Adidas Football/Soccer Tiro Es Ts",
+      "price": 2190,
+      "description": "Водовідштовхувальна тканина і зручний крій. Підходить для тренувань на свіжому повітрі.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/500525065.jpg",
+      "category": "running-clothes",
+      "inStock": 5,
+      "specifications": {
+        "size": "M",
+        "material": "Поліестер",
+        "weight": "750 г",
+        "type": "Літній"
+      }
+    },
+    {
+      "id": 54,
+      "name": "Спортивнийкостюм жіночий ThermoX Smoky",
+      "price": 1634,
+      "description": "Спортивна форма з високим рівнем повітропроникності. Не викликає подразнення.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/467554320.jpg",
+      "category": "running-clothes",
+      "inStock": 12,
+      "specifications": {
+        "size": "XS",
+        "material": "Поліестер",
+        "weight": "700 г",
+        "type": "Демісезонний"
+      }
+    },
+    {
+      "id": 55,
+      "name": "Спортивний жіночий костюм Guess 731881433 Синій",
+      "price": 4688,
+      "description": "Універсальний костюм для фітнесу та бігу. Приємний на дотик і не сковує рухів.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/356847599.jpg",
+      "category": "running-clothes",
+      "inStock": 12,
+      "specifications": {
+        "size": "М",
+        "material": "Бавовна/Поліестер",
+        "weight": "500-700 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 56,
+      "name": "Чоловічий спортивний костюм Rough Radical Intensive Темно-синій",
+      "price": 3285,
+      "description": "Модний дизайн та зручність в одному. Відмінно підходить для залу.",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/132869614.jpg",
+      "category": "running-clothes",
+      "inStock": 16,
+      "specifications": {
+        "size": "XXL",
+        "material": "Поліестер",
+        "weight": "907 г",
+        "type": "Для бігу"
+      }
+    },
+    {
+      "id": 57,
+      "name": "Спортивний костюм KAROL BASIC Білий",
+      "price": 3720,
+      "description": "Надійна тканина, яка не втрачає форму після прання. Підійде для щоденного використання.",
+      "image": "https://content.rozetka.com.ua/goods/images/big/300847274.jpg",
+      "category": "running-clothes",
+      "inStock": 7,
+      "specifications": {
+        "size": "M",
+        "material": "Фліс",
+        "weight": "555 г",
+        "type": "Тренувальний"
+      }
+    },
+    {
+      "id": 58,
+      "name": "Спортивний жіночий спортивний STIG Барді",
+      "price": 2113,
+      "description": "Універсальний комплект з футболки та штанів. Підвищений комфорт та міцність.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/294587495.jpg",
+      "category": "running-clothes",
+      "inStock": 17,
+      "specifications": {
+        "size": "XS",
+        "material": "Шкіра",
+        "weight": "448 г",
+        "type": "Професійний"
+      }
+    },
+    {
+      "id": 59,
+      "name": "Спортивний костюм AGER XL Сірий",
+      "price": 1917,
+      "description": "Сучасний спортивний костюм з терморегуляцією. Легкий та зносостійкий.",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/466287259.jpg",
+      "category": "running-clothes",
+      "inStock": 17,
+      "specifications": {
+        "size": "XL",
+        "material": "Бавовна",
+        "weight": "474 г",
+        "type": "Для бігу"
+      }
+    },
+    {
+    "id": 60,
+    "name": "Фітнес Браслет Smart Band C60 Bluetooth",
+    "price": 799,
+    "description": "Стильний і функціональний гаджет, який стане відмінним супутником для підтримки здоров'я і активного способу життя.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/445525513.jpg",
+    "category": "running-accessories",
+    "inStock": 12,
+    "specifications": {
+      "size": "Універсальний",
+      "material": "Пластик/Силікон",
+      "weight": "20–30 г",
+      "type": "Аксесуар"
+    }
+  },
+  {
+    "id": 61,
+    "name": "Бандана бігова Wilson New Bandana SS15",
+    "price": 180,
+    "description": "Стильний спортивний аксесуар, що призначений для активних тренувань і забезпечує комфорт під час фізичних навантажень.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/48368586.jpg",
+    "category": "running-accessories",
+    "inStock": 10,
+    "specifications": {
+      "size": "Унісекс",
+      "material": "Поліестер",
+      "weight": "10–15 г",
+      "type": "Головний убір"
+    }
+  },
+  {
+    "id": 62,
+    "name": "Налобний ліхтарик Silva Trail Runner Free",
+    "price": 430,
+    "description": "Ліхтарик із яскравим світлом, заряджається від USB. Ідеальний для вечірнього бігу.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/508891963.jpg",
+    "category": "running-accessories",
+    "inStock": 15,
+    "specifications": {
+      "size": "Регульований ремінь",
+      "material": "Пластик",
+      "weight": "119 г",
+      "type": "Ліхтарик"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Пов'язка на голову Nike Swoosh",
+    "price": 425,
+    "description": "Пов'язка з мікрофібри, ідеальна для тренувань у спеку.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/446217825.jpg",
+    "category": "running-accessories",
+    "inStock": 20,
+    "specifications": {
+      "size": "Універсальний",
+      "material": "Мікрофібра",
+      "weight": "One Size",
+      "type": "Аксесуар"
+    }
+  },
+  {
+    "id": 64,
+    "name": " Навушники Nokia Go Earbuds 2 Pro TWS-222",
+    "price": 1199,
+    "description": "Це стильні та високоякісні бездротові навушники, призначені для активних людей, які цінують комфорт, чудову якість звуку та сучасні технології.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/329830735.jpg",
+    "category": "running-accessories",
+    "inStock": 8,
+    "specifications": {
+      "size": "Середній",
+      "material": "Силікон",
+      "weight": "45 г",
+      "type": "Аксесуар"
+    }
+  },
+  {
+    "id": 65,
+    "name": "Засіб проти натирання шкіри SportShield",
+    "price": 255,
+    "description": "Зменшує тертя шкіри при бігу. Ідеальний для тривалих пробіжок.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/272199311.jpg",
+    "category": "running-accessories",
+    "inStock": 14,
+    "specifications": {
+      "size": "45 мл",
+      "material": "Силіконова основа",
+      "weight": "40,82 г",
+      "type": "Від мозолів"
+    }
+  },
+  {
+    "id": 66,
+    "name": "Рукавички Sporter Men (MFG172.4 C)",
+    "price": 599,
+    "description": "Зручні та стильні чоловічі рукавички, які забезпечують комфорт під час тренувань або спортивних активностей.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/423453783.jpg",
+    "category": "running-accessories",
+    "inStock": 10,
+    "specifications": {
+      "size": "XXL",
+      "material": "Поліестер",
+      "weight": "0,2 кг",
+      "type": "Одяг"
+    }
+  },
+  {
+    "id": 67,
+    "name": "Окуляри Rudy Project Agent Q",
+    "price": 690,
+    "description": "Стильні спортивні окуляри, які поєднують в собі високу технологічність та елегантний дизайн.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/429559721.jpg",
+    "category": "running-accessories",
+    "inStock": 20,
+    "specifications": {
+      "size": "19х7х10 см",
+      "material": "Поліестер",
+      "weight": "39 г",
+      "type": "Аксесуар"
+    }
+  },
+  {
+    "id": 68,
+    "name": "Сумка спортивна Merlion",
+    "price": 520,
+    "description": "Стильна та зручна сумка середнього розміру, виготовлена з водовідштовхувального матеріалу, що забезпечує довговічність та зручність у використанні.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/429198701.jpg",
+    "category": "running-accessories",
+    "inStock": 18,
+    "specifications": {
+      "size": "50x24x2 см",
+      "material": "Синтетична шкіра",
+      "weight": "0,5–0,7 кг",
+      "type": "Аксесуар"
+    }
+  },
+  {
+    "id": 69,
+    "name": "Степ платформа Sport PLUS чорна АН1576",
+    "price": 3833,
+    "description": "Двоступенева тренувальна платформа, призначена для фітнесу, аеробіки, кросфіту та схуднення.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/264179529.jpg",
+    "category": "fitness-equipment",
+    "inStock": 5,
+    "specifications": {
+      "size": "72×36,5 см",
+      "material": "ABS-пластик з покриттям TPR",
+      "weight": "150 кг",
+      "type": "Платформа"
+    }
+  },
+  {
+    "id": 70,
+    "name": "Скакалка Tecofit з лічильником",
+    "price": 350,
+    "description": "Зручна скакалка з лічильником обертів.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/420429671.jpg",
+    "category": "fitness-equipment",
+    "inStock": 18,
+    "specifications": {
+      "size": "3 м",
+      "material": "ПВХ",
+      "weight": "0,1 кг",
+      "type": "Скакалка"
+    }
+  },
+  {
+    "id": 71,
+    "name": "Скакалка Mijia Smart Skipping Rope Dark",
+    "price": 349,
+    "description": "Інноваційний спортивний аксесуар від Xiaomi, який поєднує в собі традиційну скакалку та смарт-функції для ефективного тренування.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/368522416.jpg",
+    "category": "fitness-equipment",
+    "inStock": 11,
+    "specifications": {
+      "size": "3 м",
+      "material": "ПВХ",
+      "weight": "0,2 кг",
+      "type": "Скакалка"
+    }
+  },
+  {
+    "id": 72,
+    "name": "Тренажер для М'язів Шиї Troli TrainerNeck",
+    "price": 280,
+    "description": "Спеціалізований пристрій для зміцнення шийних м'язів, ідеальний для домашніх тренувань.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/393431354.jpg",
+    "category": "fitness-equipment",
+    "inStock": 14,
+    "specifications": {
+      "size": "Універс",
+      "material": "Поліпропіленова стропа",
+      "weight": "150 г",
+      "type": "Тренажер"
+    }
+  },
+  {
+    "id": 73,
+    "name": "Тренажер для преса HS-M-7",
+    "price": 399,
+    "description": "Багатофункціональний пристрій для тренувань, який оснащений спеціальними кріпленнями для ніг на присосці.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/434260853.jpg",
+    "category": "fitness-equipment",
+    "inStock": 10,
+    "specifications": {
+      "size": "40 см",
+      "material": "Пластик + гума",
+      "weight": "1,5–2 кг",
+      "type": "Тренажер"
+    }
+  },
+  {
+    "id": 74,
+    "name": "Еліптичний тренажер FitLand YK-CT1501",
+    "price": 17200,
+    "description": "Надійний домашній орбітрек, призначений для ефективних кардіотренувань, спрямованих на зниження ваги, зміцнення м'язів та покращення роботи серцево-судинної системи.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/448879506.jpg",
+    "category": "fitness-equipment",
+    "inStock": 15,
+    "specifications": {
+      "size": "30 см",
+      "material": "ABS-пластик",
+      "weight": "31,5 кг",
+      "type": "Тренажер"
+    }
+  },
+  {
+    "id": 75,
+    "name": "Тренажер для преса KidsbunkBed",
+    "price": 4440,
+    "description": "Компактний і ефективний тренажер, призначений для тренувань вдома.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/423588171.jpg",
+    "category": "fitness-equipment",
+    "inStock": 13,
+    "specifications": {
+      "size": "99х70 см",
+      "material": "Високоякісний пластик",
+      "weight": "2,5–3 кг",
+      "type": "Тренажер"
+    }
+  },
+  {
+    "id": 76,
+    "name": "Лава для витягування спини Sportfit",
+    "price": 1900,
+    "description": "Пеціалізований тренажер для розтягування та зміцнення м'язів спини, що ідеально підходить для домашнього використання та реабілітації.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/549483201.jpg",
+    "category": "fitness-equipment",
+    "inStock": 9,
+    "specifications": {
+      "size": "120 см",
+      "material": "Метал/Екошкіра",
+      "weight": "10-12 кг",
+      "type": "Тренажер"
+    }
+  },
+  {
+    "id": 77,
+    "name": "Бігова доріжка EnergyFIT 815 new",
+    "price": 20400,
+    "description": "Сучасний тренажер, що поєднує потужність, комфорт та функціональність для домашнього використання. ",
+    "image": "https://content.rozetka.com.ua/goods/images/big/514626001.jpg",
+    "category": "fitness-equipment",
+    "inStock": 20,
+    "specifications": {
+      "size": "165x74x120 см",
+      "material": "Пластик/Сталь",
+      "weight": "58 кг",
+      "type": "Тренажер"
+    }
+  },
+  {
+    "id": 78,
+    "name": "Комплект гантелей зі змінними дисками",
+    "price": 1480,
+    "description": "Пара гантелей ідеально підходить для домашніх тренувань.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/330197058.jpg",
+    "category": "weights",
+    "inStock": 17,
+    "specifications": {
+      "weight": "16 кг",
+      "material": "Композитний пластик з мінеральним наповнювачем",
+      "type": "Гантелі",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 79,
+    "name": "Вінілові гантелі Tiguar 1.5 кг пара Оливковий",
+    "price": 1180,
+    "description": "Стильний і практичний вибір для домашніх тренувань, пілатесу, йоги та фітнесу. ",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/290453772.jpg",
+    "category": "weights",
+    "inStock": 8,
+    "specifications": {
+      "weight": "1,5 кг",
+      "material": "Метал",
+      "type": "Гантелі",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 80,
+    "name": "Гантелі HMS хромові CHD02",
+    "price": 800,
+    "description": "Стильне та надійне обладнання для домашніх тренувань, яке поєднує естетичний вигляд із високою функціональністю.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/502950734.jpg",
+    "category": "weights",
+    "inStock": 10,
+    "specifications": {
+      "weight": "4 кг",
+      "material": "Сталь",
+      "type": "Гантелі",
+      "color": "Білий"
+    }
+  },
+  {
+    "id": 81,
+    "name": "Гантель збірна Newt Home",
+    "price": 3770,
+    "description": "Універсальний силовий тренажер для домашнього використання, який дозволяє ефективно тренувати всі основні групи м'язів завдяки можливості регулювання ваги.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/176317800.jpg",
+    "category": "weights",
+    "inStock": 5,
+    "specifications": {
+      "weight": "27,5 кг",
+      "material": "Метал",
+      "type": "Гантелі",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 82,
+    "name": "Набір регульованих гантелей HMS у валізі",
+    "price": 2800,
+    "description": "Універсальний комплект для силових тренувань вдома.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/465832816.jpg",
+    "category": "weights",
+    "inStock": 12,
+    "specifications": {
+      "weight": "2х10 кг",
+      "material": "Хром",
+      "type": "Гантелі",
+      "color": "Сірий"
+    }
+  },
+  {
+    "id": 83,
+    "name": "Гантельний гриф для гантелі набірний",
+    "price": 135,
+    "description": "Компактний і зручний снаряд для силових тренувань вдома або в спортзалі. Виготовлений з металу з пластиковим покриттям, він поєднує в собі легкість, ергономічність та надійність.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/345502117.jpg",
+    "category": "weights",
+    "inStock": 7,
+    "specifications": {
+      "weight": "2x10 кг",
+      "material": "Пластик",
+      "type": "Гантелі",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 84,
+    "name": "Гантелі розбірні сталеві пофарбовані",
+    "price": 460,
+    "description": "Набір професійного рівня, що складається з двох гантелей по 15 кг кожна, загальною вагою 30 кг.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/533975436.jpg",
+    "category": "weights",
+    "inStock": 20,
+    "specifications": {
+      "weight": "30кг",
+      "material": "Силікон",
+      "type": "Гантелі",
+      "color": "Графітово-сірі"
+    }
+  },
+  {
+    "id": 85,
+    "name": "Гантель Zipro з навантаженням",
+    "price": 980,
+    "description": "Інноваційне рішення для домашніх тренувань, яке поєднує в собі компактність, функціональність та стильний дизайн. Завдяки унікальній конструкції та системі регулювання, вона дозволяє швидко змінювати навантаження без необхідності заміни дисків.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/533695408.jpg",
+    "category": "weights",
+    "inStock": 6,
+    "specifications": {
+      "weight": "24 кг",
+      "material": "Метал",
+      "type": "Гантелі",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 86,
+    "name": "Гантель цільна шестигранна",
+    "price": 10100,
+    "description": "Професійна гантель вагою 45 кг, призначена для силових тренувань у спортзалі або вдома. Її конструкція та матеріали забезпечують довговічність і безпеку під час використання.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/537667917.jpg",
+    "category": "weights",
+    "inStock": 10,
+    "specifications": {
+      "weight": "45 кг",
+      "material": "Метал",
+      "type": "Гантеля",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 87,
+    "name": "Гантелі Zelart розбірні наповнювач цемент",
+    "price": 2800,
+    "description": "Зручний та економічний варіант для домашніх тренувань, що дозволяє варіювати навантаження завдяки знімним дискам.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/534266977.jpg",
+    "category": "weights",
+    "inStock": 9,
+    "specifications": {
+      "weight": "15 кг",
+      "material": "Пластик",
+      "type": "Гантеля",
+      "color": "Чорний-червоний"
+    }
+  },
+  {
+    "id": 88, 
+    "name": "Килимок для йоги та фітнесу EasyFit",
+    "price": 620,
+    "description": "Універсальний каремат товщиною 10 мм, який підходить для різних видів тренувань, включаючи йогу, пілатес, фітнес та загальну фізичну активність.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/496660098.jpg",
+    "category": "mats",
+    "inStock": 20,
+    "specifications": {
+      "material": "NBR",
+      "thickness": "10 мм",
+      "length": "181х61 см",
+      "type": "Килимок",
+      "color": "Фіолетовий"
+    }
+  },
+  {
+    "id": 89,
+    "name": "Килимок для фітнесу TECOFIT + чохол-сумка",
+    "price": 550,
+    "description": "Стильний та функціональний аксесуар для домашніх та студійних тренувань. Його товщина 6 мм забезпечує оптимальний баланс між комфортом і стабільністю під час виконання вправ.",
+    "image": "https://content1.rozetka.com.ua/goods/images/big/477030773.jpg",
+    "category": "mats",
+    "inStock": 14,
+    "specifications": {
+      "material": "EVA",
+      "thickness": "6 мм",
+      "length": "173x61x0,6 см",
+      "type": "Килимок",
+      "color": "Фіолетовий мармур"
+    }
+  },
+  {
+    "id": 90,
+    "name": "Килимок TECOFIT + чохол-сумка",
+    "price": 650,
+    "description": "Стильний та функціональний аксесуар для домашніх та студійних тренувань.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/457070203.jpg",
+    "category": "mats",
+    "inStock": 10,
+    "specifications": {
+      "material": "NBR",
+      "thickness": "1 см",
+      "length": "183x61x1 см",
+      "type": "Килимок",
+      "color": "Синьо-чорний"
+    }
+  },
+  {
+    "id": 91,
+    "name": "Килимок для йоги EasyFit BlackMoon",
+    "price": 1350,
+    "description": "Килимок виготовлений з каучуку, що робить його дуже гнучким і зносостійким. Відмінно підходить для йоги, пілатесу та інших видів фітнесу, де важлива стабільність і комфорт.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/429069204.jpg",
+    "category": "mats",
+    "inStock": 8,
+    "specifications": {
+      "material": "Каучук",
+      "thickness": "61 см",
+      "length": "183х61х0,3 см",
+      "type": "Килимок",
+      "color": "Чорний"
+    }
+  },
+  {
+    "id": 92,
+    "name": "Килимок для йоги та фітнесу TECOFIT",
+    "price": 820,
+    "description": "Килимок є ідеальним вибором для тих, хто шукає практичний і комфортний аксесуар для занять йогою, пілатесом, фітнесом або іншими фізичними вправами вдома чи в спортзалі.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/477043437.jpg",
+    "category": "mats",
+    "inStock": 9,
+    "specifications": {
+      "material": "EVA",
+      "thickness": "15 мм",
+      "length": "173x61x0,6 см",
+      "type": "Килимок",
+      "color": "Зелений"
+    }
+  },
+  {
+    "id": 93,
+    "name": "Килимок для йоги та фітнесу EasyFit",
+    "price": 880,
+    "description": "Чудовий вибір для тих, хто шукає максимальний комфорт і підтримку під час тренувань. ",
+    "image": "https://content.rozetka.com.ua/goods/images/big/395434217.jpg",
+    "category": "mats",
+    "inStock": 16,
+    "specifications": {
+      "material": "PER",
+      "thickness": "61 см",
+      "length": "183х61х0,8 см",
+      "type": "Килимок",
+      "color": "Блакитний"
+    }
+  },
+  {
+    "id": 94,
+    "name": "Захисний килимок Maxxus",
+    "price": 970,
+    "description": "Килимок спеціально розроблений для захисту підлоги під час використання тренажерів або іншого спортивного обладнання. Він ідеально підходить для домашніх спортзалів, фітнес-студій або будь-яких інших місць, де використовується важке обладнання.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/498676464.jpg",
+    "category": "mats",
+    "inStock": 11,
+    "specifications": {
+      "material": " EVA",
+      "thickness": "100 см",
+      "length": "210x100x0,5 см",
+      "type": "Килимок",
+      "color": "Темно-синій"
+    }
+  },
+  {
+    "id": 95,
+    "name": "Килимок для фізичних вправ Gorilla Sports",
+    "price": 610,
+    "description": "універсальний аксесуар для тренувань вдома або в залі. Виготовлений з ПВХ (полівінілхлориду), він поєднує в собі зносостійкість, легкість у догляді та комфорт під час занять.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/448517095.jpg",
+    "category": "mats",
+    "inStock": 13,
+    "specifications": {
+      "material": "ПВХ",
+      "thickness": "60 см",
+      "length": "180х60х0,5 см",
+      "type": "Килимок",
+      "color": "Холодний сірий"
+    }
+  },
+  {
+    "id": 96,
+    "name": "Килимок для йоги LiveUp Yoga Mat",
+    "price": 820,
+    "description": "стильний і практичний килимок розроблений для занять йогою, пілатесом, фітнесом та іншими фізичними вправами. Виготовлений з нетоксичного ПВХ, він поєднує в собі комфорт, зносостійкість та естетичний вигляд.",
+    "image": "https://content.rozetka.com.ua/goods/images/big/476923630.jpg",
+    "category": "mats",
+    "inStock": 18,
+    "specifications": {
+      "material": "ПВХ",
+      "thickness": "61 см",
+      "length": "173x61x0,6 см",
+      "type": "Килимок",
+      "color": "Бирюзовий"
+    }
+  },
+  {
+    "id": 97,
+    "name": "Килимок спортивний TOORX",
+    "price": 895,
+    "description": "Практичний аксесуар для домашніх та студійних тренувань, що поєднує комфорт, безпеку та стильний дизайн.",
+    "image": "https://content2.rozetka.com.ua/goods/images/big/512406326.png",
+    "category": "mats",
+    "inStock": 10,
+    "specifications": {
+      "material": "PVC",
+      "thickness": "60 см",
+      "length": "173х60х0,6 см",
+      "type": "Килимок",
+      "color": "Жовтий"
+    }
+  }
+   ]
+ }
   }
   
   
